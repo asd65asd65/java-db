@@ -24,12 +24,12 @@ import javax.swing.table.TableModel;
 public class DisplayQueryResults extends JFrame 
 {
    // database URL, username and password
-   private static final String DATABASE_URL = "jdbc:derby:books";
-   private static final String USERNAME = "deitel";
-   private static final String PASSWORD = "deitel";
+   private static final String DATABASE_URL = "jdbc:derby://localhost:1527/books";
+   private static final String USERNAME = "book";
+   private static final String PASSWORD = "book";
    
    // default query retrieves all data from authors table
-   private static final String DEFAULT_QUERY = "SELECT * FROM authors";
+   private static final String DEFAULT_QUERY = "SELECT * FROM titles";
    
    private static ResultSetTableModel tableModel;
 
